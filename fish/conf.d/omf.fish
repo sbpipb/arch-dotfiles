@@ -18,3 +18,8 @@ alias gcpom='git stash; git checkout master; gpom'
 # tools
 alias tmr="npx @rstacruz/passtime"
 
+# Wall
+cat ~/.cache/wal/sequences &
+
+# Docker
+alias dps="docker ps"
