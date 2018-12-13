@@ -19,7 +19,12 @@ alias gcpom='git stash; git checkout master; gpom'
 alias tmr="npx @rstacruz/passtime"
 
 # Wall
-cat ~/.cache/wal/sequences &
+
+# https://github.com/dylanaraps/pywal/wiki/Getting-Started#applying-the-theme-to-new-terminals
+if test -e ~/.cache/wal/sequences; and status --is-interactive
+  cat ~/.cache/wal/sequences &
+end
 
 # Docker
 alias dps="docker ps"
+alias dcs="docker-compose stop"
