@@ -28,3 +28,9 @@ end
 # Docker
 alias dps="docker ps"
 alias dcs="docker-compose stop"
+alias dcb="docker-compose build"
+
+alias dr='docker-compose run --rm --service-ports web'
+abbr dc="docker-compose"
+abbr dcb="docker-compose build"
+abbr dcs="docker-compose up" 
