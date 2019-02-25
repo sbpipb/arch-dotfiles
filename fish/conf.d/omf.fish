@@ -9,7 +9,7 @@ source $OMF_PATH/init.fish
 
 
 # Shortcuts
-alias v='vim'
+# alias v='vim'
 
 # git helpers
 alias gpom='git pull --rebase origin master'
@@ -31,6 +31,8 @@ alias dcs="docker-compose stop"
 alias dcb="docker-compose build"
 
 alias dr='docker-compose run --rm --service-ports web'
-abbr dc="docker-compose"
-abbr dcb="docker-compose build"
-abbr dcs="docker-compose stop" 
+abbr -a -U -- dc "docker-compose"
+abbr -a -U -- dcb "docker-compose build"
+abbr  -a -U -- dcs "docker-compose stop" 
+abbr  -a -U -- gpo "git push origin"
+abbr -a -U -- gpor "git pull --rebase origin"
